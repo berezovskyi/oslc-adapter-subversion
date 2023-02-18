@@ -4,6 +4,21 @@
   <artifactId>oslc4jsubversion</artifactId>
   <version>1.1.0</version>
   
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   	<maven.compiler.source>1.8</maven.compiler.source>
+   	<maven.compiler.target>1.8</maven.compiler.target>
+		<v.lyo>2.1.2</v.lyo>
+	</properties>
+  
+  <repositories>
+    <repository>
+      <id>lyo-releases</id>
+      <name>lyo-releases repository</name>
+      <url>https://repo.eclipse.org/content/repositories/lyo-releases/</url>
+    </repository>
+  </repositories>
+
   <dependencies>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
@@ -33,28 +48,28 @@
 		<dependency>
 			<groupId>org.eclipse.lyo.oslc4j.core</groupId>
 			<artifactId>oslc4j-wink</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${v.lyo}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.lyo.oslc4j.core</groupId>
 			<artifactId>oslc4j-jena-provider</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${v.lyo}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.lyo.oslc4j.core</groupId>
 			<artifactId>oslc4j-core</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${v.lyo}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.lyo.core.query</groupId>
 			<artifactId>oslc-query</artifactId>
-			<version>[1.1,)</version>
+			<version>${v.lyo}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.eclipse.lyo.oslc4j.core</groupId>
 			<artifactId>oslc4j-json4j-provider</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${v.lyo}</version>
 		</dependency>
 		
 		<dependency>
