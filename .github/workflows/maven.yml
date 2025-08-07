@@ -10,9 +10,14 @@ name: CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [master, main]
   pull_request:
-    branches: [ "master" ]
+    branches: [master, main]
+  schedule:
+    - cron: "01 13 1-7 * 5" # catch SNAPSHOT breaking changes
+  merge_group:
+  workflow_dispatch:
+
 
 jobs:
   build:
